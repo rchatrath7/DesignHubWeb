@@ -23,9 +23,11 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :pittdesignhub, Pittdesignhub.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  adapter: Ecto.Adapters.MySQL,
+  username: "",
+  password: "",
   database: "pittdesignhub_dev",
   hostname: "localhost",
   pool_size: 10
+
+import_config "dev.secret.exs"

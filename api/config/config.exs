@@ -12,7 +12,7 @@ config :pittdesignhub,
 # Configures the endpoint
 config :pittdesignhub, Pittdesignhub.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "HZcvX1Ie98T8eoJKFtrEw1Ktia3izdF2wZ/RM7NbkIEOC/33ArdC211Il0B6KNW4",
+  secret_key_base: "0QrpfVp4x/aIxMvRrzosXueE9WPfjCToYJKIqXUvZ4ui6QCthOG3ZAVQE+EpAn05",
   render_errors: [view: Pittdesignhub.ErrorView, accepts: ~w(json)],
   pubsub: [name: Pittdesignhub.PubSub,
            adapter: Phoenix.PubSub.PG2]

@@ -34,7 +34,7 @@ defmodule Pittdesignhub.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_pittdesignhub_key",
-    signing_salt: "UJ6arzG/"
+    signing_salt: "VZ5pTqh3"
 
   plug Pittdesignhub.Router
 end
