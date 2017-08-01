@@ -15,13 +15,13 @@ defmodule Pittdesignhub.Router do
     plug Guardian.Plug.LoadResource
   end
 
-  scope "/", Sling do
+  scope "/", Pittdesignhub do
     pipe_through :browser
 
     get "/", PageController, :index
   end
 
-  scope "/api", Sling do
+  scope "/api", Pittdesignhub do
     pipe_through :api
 
     post "/sessions", SessionController, :create
