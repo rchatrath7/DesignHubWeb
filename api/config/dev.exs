@@ -31,3 +31,6 @@ config :pittdesignhub, Pittdesignhub.Repo,
   pool_size: 10
 
 import_config "dev.secret.exs"
+
+config :guardian, Guardian,
+  secret_key: "mHvI4XXzBHpebVyHeTtQbzkK13FzqfvY89keUvxDHSinLESlnEFSb8Np+9LHmS54"
