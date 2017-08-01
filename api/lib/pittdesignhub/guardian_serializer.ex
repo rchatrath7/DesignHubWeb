@@ -1,8 +1,8 @@
 defmodule Pittdesignhub.GuardianSerializer do
   @behaviour Guardian.Serializer
 
-  alias Sling.Repo
-  alias Sling.User
+  alias Pittdesignhub.Repo
+  alias Pittdesignhub.User
 
   def for_token(user = %User{}), do: {:ok, "User:#{user.id}"}
   def for_token(_), do: {:error, "Unknown resource type"}
