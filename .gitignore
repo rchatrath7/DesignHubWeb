@@ -1,1 +1,3 @@
 *.secret.exs
+.DS_Store
+
