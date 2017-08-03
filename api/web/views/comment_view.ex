@@ -14,7 +14,8 @@ defmodule Pittdesignhub.CommentView do
       author: comment.author,
       resolved: comment.resolved,
       comment: comment.comment,
-      parent_id: comment.parent_id}
+      parent_id: comment.parent_id, 
+      question_id: comment.question_id}
       |> add_children(comment)
   end
 
