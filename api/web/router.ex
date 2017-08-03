@@ -29,5 +29,7 @@ defmodule Pittdesignhub.Router do
     post "/sessions/refresh", SessionController, :refresh
     resources "/users", UserController, only: [:create]
     resources "/comments", CommentController, except: [:new, :edit]
+    resources "/questions", QuestionController, except: [:new, :edit]
+    resources "/charters", CharterController, except: [:new, :edit]
   end
 end
