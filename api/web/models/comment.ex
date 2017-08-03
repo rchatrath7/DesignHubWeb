@@ -8,6 +8,7 @@ defmodule Pittdesignhub.Comment do
 
     has_many :children, Pittdesignhub.Comment, foreign_key: :parent_id
     belongs_to :parent, Pittdesignhub.Comment, foreign_key: :parent_id
+    belongs_to :question, Pittdesignhub.Question
 
     timestamps()
   end
@@ -47,7 +48,7 @@ defmodule Pittdesignhub.Comment do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:author, :resolved, :comment, :parent_id])
-    |> validate_required([:author, :resolved, :comment])
+    |> cast(params, [:author, :resolved, :comment, :parent_id, :question_id])
+    |> validate_required([:author, :resolved, :comment, :question_id])
   end
 end
