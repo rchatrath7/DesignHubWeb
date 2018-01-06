@@ -31,5 +31,8 @@ defmodule Pittdesignhub.Router do
     resources "/comments", CommentController, except: [:new, :edit]
     resources "/questions", QuestionController, except: [:new, :edit]
     resources "/charters", CharterController, except: [:new, :edit]
+    resources "/designers", DesignerController, except: [:new, :edit]
+    resources "/managers", ManagerController, except: [:new, :edit]
+    resources "/teams", TeamController, except: [:new, :edit]
   end
 end

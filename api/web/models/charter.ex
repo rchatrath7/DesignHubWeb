@@ -7,6 +7,8 @@ defmodule Pittdesignhub.Charter do
     field :version, :string
 
     has_many :questions, Pittdesignhub.Question
+    belongs_to :team, Pittdesignhub.Team
+    
     timestamps()
   end
 

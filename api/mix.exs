@@ -33,10 +33,10 @@ defmodule Pittdesignhub.Mixfile do
     [{:phoenix, "~> 1.2.5"},
      {:phoenix_pubsub, "~> 1.0"},
      {:phoenix_ecto, "~> 3.0"},
-     {:mariaex, ">= 0.0.0"},
+     {:mariaex, git: "https://github.com/xerions/mariaex", branch: "master", override: true},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
- 	 {:comeonin, "~> 3.2"}, 
+ 	 {:comeonin, "~> 3.2"},
  	 {:guardian, "~> 0.14"}]
   end
 
